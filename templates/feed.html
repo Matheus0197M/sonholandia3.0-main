@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/feed.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css" rel="stylesheet" />
+    <title>Sonholândia | Feed</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button>
+                <div class="user">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+                    <p>User</p>
+                </div>
+            </button>
+
+            <a href="" class="">Feed</a>
+
+            <input type="search" placeholder="Pesquisar" />
+
+            <a href="" class="linkPostarSonho"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-plus-square" viewBox="0 0 16 16">
+                    <path
+                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                    <path
+                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                </svg>
+                Postar um sonho</a>
+
+            <button class="menuFeed">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Toda a área dedicada aos sonhos das pessoas -->
+    <main>
+        <section>
+          <article class="reveal" id="sonho">
+            <!-- usuario em cima, pra saber quem postou esse trem; tem que fazer um pequeno menu, para denunciar o usuario caso ele faça merda -->
+              <h2>Título</h2>
+              <p>
+                  Sonhei que havia um gorila dentro da cozinha da minha casa, abrindo
+                  a...😁
+              </p>
+              <article class="hashtags">
+                  <a href="" class="tagsEngajamento">#casa</a><a href="" class="tagsEngajamento">#animal</a><a href="" class="tagsEngajamento">#engraçados</a>
+              </article>
+              <article class="buttonsDreams">
+                  <button class="botaoCurtir">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-heart" viewBox="0 0 16 16">
+                          <path
+                              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                      </svg>
+                  </button>
+                  <button class="botaoComentar">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                      </svg>
+                  </button>
+                  <button class="botaoAddFavoritos">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0" />
+                      </svg>
+                  </button>
+                  <button class="verMaisDentro">Ver mais <i class="bxr bxs-arrow-big-right-line"></i></button>
+              </article>
+          </article>
+          <article class="reveal" id="sonho">
+            <!-- usuario em cima, pra saber quem postou esse trem; tem que fazer um pequeno menu, para denunciar o usuario caso ele faça merda -->
+              <h2>Título</h2>
+              <p>
+                  Sonhei que havia um gorila dentro da cozinha da minha casa, abrindo
+                  a...😁
+              </p>
+              <article class="hashtags">
+                  <a href="" class="tagsEngajamento">#casa</a><a href="" class="tagsEngajamento">#animal</a><a href="" class="tagsEngajamento">#engraçados</a>
+              </article>
+              <article class="buttonsDreams">
+                  <button class="botaoCurtir">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-heart" viewBox="0 0 16 16">
+                          <path
+                              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                      </svg>
+                  </button>
+                  <button class="botaoComentar">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                      </svg>
+                  </button>
+                  <button class="botaoAddFavoritos">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0" />
+                      </svg>
+                  </button>
+                  <button class="verMaisDentro">Ver mais <i class="bxr bxs-arrow-big-right-line"></i></button>
+              </article>
+          </article>
+          <article class="reveal" id="sonho">
+            <!-- usuario em cima, pra saber quem postou esse trem; tem que fazer um pequeno menu, para denunciar o usuario caso ele faça merda -->
+              <h2>Título</h2>
+              <p>
+                  Sonhei que havia um gorila dentro da cozinha da minha casa, abrindo
+                  a...😁
+              </p>
+              <article class="hashtags">
+                  <a href="" class="tagsEngajamento">#casa</a><a href="" class="tagsEngajamento">#animal</a><a href="" class="tagsEngajamento">#engraçados</a>
+              </article>
+              <article class="buttonsDreams">
+                  <button class="botaoCurtir">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-heart" viewBox="0 0 16 16">
+                          <path
+                              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                      </svg>
+                  </button>
+                  <button class="botaoComentar">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                      </svg>
+                  </button>
+                  <button class="botaoAddFavoritos">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                          <path
+                              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0" />
+                      </svg>
+                  </button>
+                  <button class="verMaisDentro">Ver mais <i class="bxr bxs-arrow-big-right-line"></i></button>
+              </article>
+            </article>
+            <button class="verMaisVarios">Ver mais sonhos <i class="bxr bxs-arrow-big-right-line"></i></button>
+        </section>
+    </main>
+
+    <script src="../static/feed.js"></script>
+</body>
+
+</html>

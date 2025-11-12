@@ -1,0 +1,247 @@
+/* SÓ NÃO PODE FICAR IGUAL AO INSTAGRAM, PROS CARA NÃO FICAR NA SUA MALDADE DEPOIS */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Momo+Signature&display=swap');
+
+/* Tem que ter um espaço para variáveis, né? */
+/* Pelo menos uma, para border radius */
+
+/* Aqui começa o bagulho */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(to bottom, #050035, #18002c);
+    min-height: 100dvh;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    margin: 0 14rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+h1{
+    font-family: 'Momo Signature', sans-serif;
+}
+
+h3{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* MAIN */
+section{
+    display: flex;
+    padding: 1rem;
+}
+
+.sectionPrincipal{
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/*.slogan{
+    position: relative;
+    left: -30rem;
+    top: 15rem;
+    font-family: 'Google Sans Code', sans-serif;
+}*/
+
+.imagensLogin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Imagens */
+.img01{
+    transform: rotate(-15deg);
+    position: relative;
+    left: 4rem;
+    z-index: -1;
+    border-radius: 8px;
+    height: 30dvh;
+    width: 10dvw;
+}
+
+.img02{
+    transform: scale(1.07);
+    border-radius: 1rem;
+    height: 40dvh;
+    width: 14dvw;
+}
+
+.img03{
+    transform: rotate(15deg);
+    position: relative;
+    right: 4rem;
+    z-index: -1;
+    border-radius: 8px;
+    height: 30dvh;
+    width: 10dvw;
+}
+
+/* Formulario do Login */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+form input{
+    padding: 5px 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    background: #ddd;
+    color: #020025;
+}
+
+form a{
+    text-decoration: none;
+    color: #210047;
+    background: none;
+    padding: 8px;
+    text-align: center;
+    color: #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.botaoEntrar{
+    background: linear-gradient(to right, #0077ff, #2c0092);
+    padding: 5px 5rem;
+}
+
+.entrarGoogle{
+    font-weight: 700;
+    color: #eaecff;
+}
+
+.entrarFacebook{
+    color: #0059ff;
+    font-weight: 700;
+}
+
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+footer a{
+    color: #eee;
+}
+
+footer section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*HEADER, por incrível que pareça*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: #eee;
+}
+
+select{
+    background: none;
+    color: #eee;
+    border: none;
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+option{
+    background: #020025;
+    color: #fff;
+}
+
+/* GOOLDEEEN */
+.copyright{
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+/* Slk, ainda tem que fazer um monte de animação e efeito ainda */
+/* HOVER'S */
+a:hover{
+    color: rgb(162, 0, 255);
+    transition: all 101ms linear;
+}
+
+.botaoEntrar:hover{
+    transform: scale(1.08);
+    transition: all 101ms linear;
+    color: #fff;
+}
+
+.entrarGoogle:hover{
+    transform: scale(1.02);
+    transform: rotate(1.02deg);
+    padding: 8px;
+    color: #eaecff;
+    box-shadow: 0 2px 4px #e6d8c7;
+    transition: all 101ms linear;
+}
+
+.entrarFacebook:hover{
+    transform: scale(1.02);
+    transform: rotate(1.02deg);
+    padding: 8px;
+    color: #0059ff;
+    box-shadow: 0 2px 4px #0077ff;
+    transition: all 101ms linear;
+}
+
+.copyright:hover{
+    color: gold;
+    border-radius: 10px;
+    transition: all 101ms linear;
+}
+
+/* OU, deu ideia aqui de fazer uma animação hover, que troca as cores, deixando o texto dourado linear e o fundo preto, mantendo a borda amarela */
+/* Tem que achar umas cor mais puxada para abelha, sei lá */

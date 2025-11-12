@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <title>Sonholândia</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="sectionPrincipal">
+        <article class="imagensLogin">
+          <img
+            class="img01"
+            src="{{ url_for('static', filename='assets/relaxed-woman-lying-with-eyes-closed-bed.jpg') }}"
+            alt=""
+          />
+          <img
+            class="img02"
+            src="{{ url_for('static', filename='assets/full-shot-man-drinking-coffee.jpg') }}"
+            alt=""
+          />
+          <img
+            class="img03"
+            src="{{ url_for('static', filename='assets/man-using-laptop-while-couch-home.jpg') }}"
+            alt=""
+          />
+        </article>
+
+        <article class="formLogin">
+          <form method="post" action="login">
+            <h1>Sonholândia</h1>
+            <br />
+            <input type="email" placeholder="Email" name="email" required />
+            <!-- POR ENQUANTO, SÓ EMAIL PRA NAO CAGAR COM TUDO, CERTO? -->
+            <input
+              type="password"
+              placeholder="Senha"
+              name="password"
+              required
+            />
+            <button
+              href="{{ url_for(/login)}}"
+              class="botaoEntrar"
+              type="submit"
+            >
+              Entrar
+            </button>
+
+            <article class="divDoOU">
+              <h3>
+                OU
+                <!-- svg... -->
+              </h3>
+            </article>
+
+            <!-- AQUI: botão de login Google deve apontar para a rota /login -->
+            <a href="{{ url_for('/loginWithGoogle') }}" class="entrarGoogle">
+              <!-- svg Google (seu svg) -->
+              Entrar com o Google
+            </a>
+
+            <a href="#" class="entrarFacebook">Entrar com o Facebook</a>
+            <a href="#">Esqueceu a senha?</a>
+            <br />
+            <p>
+              Não tem uma conta?
+              <a href="#3" class="botaoCadastrar">Cadastre-se</a>
+            </p>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <header>
+          <nav>
+            <a href="#">Sobre</a>
+            <a href="#">Blog</a>
+            <select name="" id="">
+              <option value="">Português (Brasil)</option>
+              <option value="">Inglês (EUA)</option>
+              <option value="">Espanhol</option>
+            </select>
+            <a href="#">Termos</a>
+            <a href="#">Nosso App</a>
+            <a href="">Nossa IA</a>
+          </nav>
+        </header>
+        <article>
+          <span class="copyright"
+            >Golden Boy | Copyright © Sonholândia | 2025</span
+          >
+        </article>
+      </section>
+    </footer>
+
+    <!-- se você quiser usar um main.js -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
